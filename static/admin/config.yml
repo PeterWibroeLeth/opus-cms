@@ -1,5 +1,7 @@
 backend:
-  name: test-repo
+  name: github
+  repo: PeterWibroeLeth/opus-cms
+  branch: main
 
 media_folder: static/img
 public_folder: /img
@@ -10,9 +12,6 @@ collections:
     folder: docs
     create: true
     slug: "{{slug}}"
-    extension: md
-    format: frontmatter
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Sidebar Position, name: sidebar_position, widget: number, required: false }
       - { label: Body, name: body, widget: markdown }
